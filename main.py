@@ -1,7 +1,7 @@
 
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 from fastapi.staticfiles import StaticFiles
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -25,7 +25,7 @@ D. Emotion Labels
 E. Emotion emojis
 """
 #A. Model Path (BiGRU)
-model_path = "Artifacts/BiGRU_Model.keras"
+model_path = "Artifacts/BiGRU_model.keras"
 
 #B. Tokenizer Path
 tokenizer_path = "Artifacts/tokenizer.pkl"
